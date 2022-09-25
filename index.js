@@ -6,7 +6,7 @@ const addBox = document.querySelector(".add-box"),
   descTag = popupBox.querySelector(".editor"),
   addBtn = popupBox.querySelector(".btnText");
 
-let copyText = document.querySelector(".copy-text");
+let copyText = document.querySelector("#copy-text");
 const months = [
   "January",
   "February",
@@ -58,20 +58,11 @@ addBtn.addEventListener("click", (e) => {
       isUpdate = false;
       notes[updateId] = noteInfo;
     }
-    sessionStorage.setItem("notes", JSON.stringify(notes));
+    localStorage.setItem("notes", JSON.stringify(notes));
     showNotes();
     closeIcon.click();
   }
 });
-
-function showMenu(elem) {
-  elem.parentElement.classList.add("show");
-  document.addEventListener("click", (e) => {
-    if (e.target.tagName != "svg" || e.target != elem) {
-      elem.parentElement.classList.remove("show");
-    }
-  });
-}
 
 function showNotes() {
   if (!notes) return;
@@ -110,24 +101,43 @@ Delete</li>
 }
 showNotes();
 
+function showMenu(elem) {
+  elem.parentElement.classList.add("show");
+
+  // document.addEventListener("click", (e) => {
+  //   console.log(elem, e.target.tagName);
+  //   if (e.target.tagName != "span" || e.target != elem) {
+  //     console.log(elem.parentElement)
+  //     elem.parentElement.classList.remove("show");
+  //   }
+  // });
+}
+
 function updateNote(noteId, title, filterDesc) {
   let description = filterDesc.replaceAll("<br/>", "\r\n");
   updateId = noteId;
   isUpdate = true;
   addBox.click();
   titleTag.value = title;
-  descTag.value = description;
+  descTag.innerText = description;
   popupTitle.innerText = "Update a Note";
   addBtn.innerText = "Update Note";
 }
 
-// copyText.querySelector("button").addEventListener("click", function () {
-//   let input = copyText.querySelector("input.text");
-//   input.select();
-//   document.execCommand("copy");
-//   copyText.classList.add("active");
-//   window.getSelection().removeAllRanges();
-//   setTimeout(function () {
-//     copyText.classList.remove("active");
-//   }, 2500);
-// });
+function deleteNote(noteId) {
+  let confirmDel = confirm("are you sure you want to delete this");
+  if (!confirmDel) return;
+  notes.splice(noteId, 2);
+  sessionStorage.setItem("notes", JSON.stringify(notes));
+  showNotes();
+}
+copyText.addEventListener("click", () => {
+  let input = descTag.innerText;
+
+  navigator.clipboard.writeText(input);
+  copyText.classList.add("active");
+  window.getSelection().removeAllRanges();
+  setTimeout(function () {
+    copyText.classList.remove("active");
+  }, 2500);
+});
