@@ -4,23 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Matrix Notes</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
   <body>
     <header class="page-header">
       <nav class="nav-bar">
         <span><a class="page-title" href="">Matrix Notes App</a></span>
-        <button class="create-btn">
+        <!-- <button class="create-btn">
           <span> Create </span>
           <span><img src="./images/plus.png" alt="" /></span>
-        </button>
+        </button> -->
       </nav>
     </header>
 
     <main>
+      <div class="popup-box">
+        <div class="popup">
+          <div class="content">
+            <header>
+              <p></p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 times"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </header>
+            <form action="#">
+              <div class="row title">
+                <label>Title</label>
+                <input type="text" spellcheck="false" />
+              </div>
+              <div class="row description">
+                <label>Description</label>
+                <div contenteditable class="editor"></div>
+              </div>
+              <div class="tools">
+                <button id="bold" class="option-button format highLight">
+                  <i class="fa-solid fa-bold"></i>
+                </button>
+                <button id="italic" class="option-button format highLight">
+                  <i class="fa-solid fa-italic"></i>
+                </button>
+                <button id="underline" class="option-button format highLight">
+                  <i class="fa-solid fa-underline"></i>
+                </button>
+              </div>
+              <button class="btnText"></button>
+            </form>
+          </div>
+        </div>
+      </div>
       <div class="notes">
-        <div class="note-box">
+        <div class="wrapper">
+          <li class="add-box">
+            <div class="icon">+</div>
+            <p>Add new note</p>
+          </li>
+        </div>
+
+        <!--<div class="note-box">
           <div class="notes-header">Title</div>
           <div class="notes-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
@@ -30,7 +86,7 @@
             officiis sint eius tempore excepturi commodi illum, cumque ipsa
             blanditiis! Voluptatem.
           </div>
-          <div class="cp-pst-btn">
+           <div class="cp-pst-btn">
             <button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -144,9 +200,9 @@
             <button>Paste</button>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- <div class="container">
+        <!-- <div class="container">
         <div class="label">joining link</div>
         <div class="copy-text">
           <input type="text" name="" id="" class="text" value="morpheus" />
@@ -166,9 +222,9 @@
               />
             </svg>
           </button>
-        </div>
-      </div> -->
+        </div>-->
+      </div>
     </main>
-    <footer>Footer</footer>
+    <script src="./index.js"></script>
   </body>
 </html>
