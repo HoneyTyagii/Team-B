@@ -141,3 +141,69 @@ copyText.addEventListener("click", () => {
     copyText.classList.remove("active");
   }, 2500);
 });
+
+// Update srijoy
+
+const editableEl = document.querySelector(".editable");
+const boldEl = document.querySelector("#bold");
+const italicEl = document.querySelector("#italic");
+const underlineEl = document.querySelector("#underline");
+
+function getSelectionText() {
+  var text = "";
+  const activeEl = document.activeElement;
+  const activeElTagName = activeEl ? activeEl.tagName.toLowerCase() : null;
+
+  if (window.getSelection) text = window.getSelection().toString();
+  return text;
+}
+
+document.onmouseup =
+  document.onkeyup =
+  document.onselectionchange =
+    function () {
+      getSelectionText();
+    };
+
+function replaceSelectedText(replacementText, property) {
+  var sel, range, newNode;
+
+  switch (property) {
+    case "bold":
+      newNode = document.createElement("b");
+      break;
+    case "italic":
+      newNode = document.createElement("i");
+      break;
+    case "underline":
+      newNode = document.createElement("u");
+      break;
+  }
+
+  if (window.getSelection) {
+    sel = window.getSelection();
+    newNode.appendChild(document.createTextNode(replacementText));
+    if (sel.rangeCount) {
+      range = sel.getRangeAt(0);
+      if (
+        range.commonAncestorContainer.parentNode.tagName.toLowerCase() == "b" &&
+        property == "bold"
+      ) {
+        const nodeText = range.commonAncestorContainer.textContent;
+        range.commonAncestorContainer.parentNode.outerHTML = nodeText;
+      } else {
+        range.deleteContents();
+        range.insertNode(newNode);
+      }
+    }
+  }
+}
+
+const editData = (e) => {
+  const text = getSelectionText();
+  replaceSelectedText(text, e.target.id);
+};
+
+boldEl.addEventListener("click", editData);
+italicEl.addEventListener("click", editData);
+underlineEl.addEventListener("click", editData);
