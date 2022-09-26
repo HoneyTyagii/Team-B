@@ -1,6 +1,6 @@
-# M-notes!
+# M-notes!![Matrix Notes](https://github.com/SobhanDash/Team-B/blob/1f2718f6e8a33e612134d7f813d0ae3fd3155fe4/assets/apple-touch-icon.png)
 
-## <h1 align="center">Matrix Notepad 👩🏻‍💻👨🏻‍💻 </h1>![](https://github.com/SobhanDash/Team-B/blob/main/assets/favicon-16x16.png)
+## <h1 align="center">Matrix Notepad 👩🏻‍💻👨🏻‍💻 </h1>
 
 ---
 
