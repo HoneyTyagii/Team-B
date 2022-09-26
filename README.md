@@ -4,7 +4,7 @@
 
 ### Introduction
 
-##### [Live demo](https://github.com/SobhanDash/Team-B/blob/main/assets/overallworkingV1.1.gif):
+##### ![Live demo](https://github.com/SobhanDash/Team-B/blob/main/assets/overallworkingV1.1.gif):
 
 ---
 
