@@ -2,7 +2,7 @@
 
 ## <h2 align="center">The Matrix Notepad 👩🏻‍💻👨🏻‍💻 </h2>
 
-### Introduction
+### Live Demo
 
 ##### ![Live demo](https://github.com/SobhanDash/Team-B/blob/main/assets/overallworkingV1.1.gif):
 
