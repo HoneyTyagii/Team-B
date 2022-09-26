@@ -2,15 +2,15 @@
 
 ## <h2 align="center">The Matrix Notepad 👩🏻‍💻👨🏻‍💻 </h2>
 
-### Live Demo
-
-##### ![Live demo](https://github.com/SobhanDash/Team-B/blob/main/assets/overallworkingV1.1.gif):
-
----
-
 ### About
 
 It is an responsive web-app which allows users to create new notes, edit, save, delete as well as copy notes. You can also use text formatting features like bold, italics and underline. You can create a note which is a fully functional Browser based Text-Editor.
+
+---
+
+### Live Demo
+
+##### ![Live demo](https://github.com/SobhanDash/Team-B/blob/main/assets/overallworkingV1.1.gif):
 
 ---
 
