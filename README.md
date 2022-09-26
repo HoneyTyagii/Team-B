@@ -1,29 +1,31 @@
-# Team-B M-notes![Banner](banner.png)
+# M-notes!
 
-# Notepad App
----
----
+## <h1 align="center">Matrix Notepad 👩🏻‍💻👨🏻‍💻 </h1>
 
+---
 
 # Introduction
 
 ### [Live demo]():
 
 ---
+
 # About
 
 It is an responsive web-app which allows users to create new notes, edit, save, delete as well as copy notes. You can also use text formatting features like bold, italics and underline. You can create a note which is a fully functional Browser based Text-Editor.
 
 ---
+
 # App Features
 
-     Landing page
+<p align="center"><strong>Landing Page</strong></p>
 
-![](landingpage.png)
 
-    New page 
+![Landing Page](https://github.com/SobhanDash/Team-B/blob/main/assets/landingpage.png?raw=true)
 
-![](newpage.png)
+<p align="center"><strong>Add Note Form</strong></p>
+
+![New Page](https://github.com/SobhanDash/Team-B/blob/main/assets/newpage.png?raw=true)
 
     Save page
 
@@ -31,21 +33,21 @@ It is an responsive web-app which allows users to create new notes, edit, save, 
 
     View page
 
-    Bold, italics, underline, copy 
+    Bold, italics, underline, copy
 
-![](unknown.png)
 ---
+
 # TechStack
- 
- 1. HTML
- 2. CSS
- 3. Javascript
+
+1.  HTML
+2.  CSS
+3.  Javascript
 
 ---
 
 # Contributors
 
-1. [Sobhan Dash](https://github.com/SobhanDash) 
+1. [Sobhan Dash](https://github.com/SobhanDash)
 2. [Honey Tyagi](https://github.com/HoneyTyagii)
 3. [Srijoy Paul](https://github.com/srijoy-paul)
 4. [Jaskirat Singh](https://github.com/JASKIRAT11011)
