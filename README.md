@@ -25,7 +25,7 @@ It is an responsive web-app which allows users to create new notes, edit, save, 
 
 <p align="center"><strong>Add Note Form</strong></p>
 
-![New Page](https://github.com/SobhanDash/Team-B/blob/main/assets/newpage.png?raw=true)
+![New Note](https://github.com/SobhanDash/Team-B/blob/main/assets/newnote.png?raw=true)
 
     Save page
 
