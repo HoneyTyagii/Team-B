@@ -1,25 +1,22 @@
-# M-notes!
+# <h1 align="center"> M-notes!![Matrix Notes](https://github.com/SobhanDash/Team-B/blob/1f2718f6e8a33e612134d7f813d0ae3fd3155fe4/assets/favicon-32x32.png)</h1>
 
-## <h1 align="center">Matrix Notepad 👩🏻‍💻👨🏻‍💻 </h1>
+## <h2 align="center">The Matrix Notepad 👩🏻‍💻👨🏻‍💻 </h2>
 
----
+### Introduction
 
-# Introduction
-
-### [Live demo]():
+##### [Live demo]():
 
 ---
 
-# About
+### About
 
 It is an responsive web-app which allows users to create new notes, edit, save, delete as well as copy notes. You can also use text formatting features like bold, italics and underline. You can create a note which is a fully functional Browser based Text-Editor.
 
 ---
 
-# App Features
+### App Features
 
 <p align="center"><strong>Landing Page</strong></p>
-
 
 ![Landing Page](https://github.com/SobhanDash/Team-B/blob/main/assets/landingpage.png?raw=true)
 
@@ -37,7 +34,7 @@ It is an responsive web-app which allows users to create new notes, edit, save, 
 
 ---
 
-# TechStack
+### TechStack
 
 1.  HTML
 2.  CSS
@@ -45,7 +42,7 @@ It is an responsive web-app which allows users to create new notes, edit, save, 
 
 ---
 
-# Contributors
+### Contributors
 
 1. [Sobhan Dash](https://github.com/SobhanDash)
 2. [Honey Tyagi](https://github.com/HoneyTyagii)
