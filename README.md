@@ -1,6 +1,6 @@
 # M-notes!
 
-## <h1 align="center">Matrix Notepad 👩🏻‍💻👨🏻‍💻 </h1>
+## <h1 align="center">Matrix Notepad 👩🏻‍💻👨🏻‍💻 </h1>![](https://github.com/SobhanDash/Team-B/blob/main/assets/favicon-16x16.png)
 
 ---
 
